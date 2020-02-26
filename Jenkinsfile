@@ -1,4 +1,8 @@
 pipeline {
+  environment {
+    registry = "latchudocker/petdocker"
+    registryCredential = ‘dockerhub’
+  }
   agent any
     tools {
       maven 'maven'
