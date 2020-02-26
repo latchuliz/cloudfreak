@@ -1,7 +1,7 @@
 pipeline {
   environment {
     registry = "latchudocker/petdocker"
-    registryCredential = ‘dockerhub’
+    registryCredential = "dockerhub"
   }
   agent any
     tools {
